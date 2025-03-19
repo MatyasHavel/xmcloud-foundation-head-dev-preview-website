@@ -1,0 +1,37 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "sugcz",
+    "items": {
+        "path": "sugcz",
+        "includes": [
+            {
+                "name": "content",
+                "path": "/sitecore/content/sugcz"
+            },
+            {
+                "name": "phsettings",
+                "path": "/sitecore/layout/Placeholder Settings/Project/sugcz"
+            },
+            {
+                "name": "renderings",
+                "path": "/sitecore/layout/Renderings/Project/sugcz"
+            },
+            {
+                "name": "settings",
+                "path": "/sitecore/system/Settings/Project/sugcz"
+            },
+            {
+                "name": "templates",
+                "path": "/sitecore/templates/Project/sugcz"
+            },
+            {
+                "name": "branches",
+                "path": "/sitecore/templates/Branches/Project/sugcz"
+            },
+            {
+                "name": "workflow",
+                "path": "/sitecore/system/Workflows/Sugcz Workflow"
+            }
+        ]
+    }
+}

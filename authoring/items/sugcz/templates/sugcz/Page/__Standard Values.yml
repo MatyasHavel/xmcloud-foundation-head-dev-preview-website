@@ -1,0 +1,40 @@
+﻿---
+ID: "9bbe3bbc-eead-401e-b3c8-f2ee682723c7"
+Parent: "1be8170d-0160-4ccc-ad8d-e3a745ed72be"
+Template: "1be8170d-0160-4ccc-ad8d-e3a745ed72be"
+Path: /sitecore/templates/Project/sugcz/Page/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {1BE8170D-0160-4CCC-AD8D-E3A745ED72BE}
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250319T200806Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\matyas.havel@aricoma.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\matyas.havel@aricoma.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8ce043da-cb81-4414-a681-ba365dcc4a1b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\matyas.havel@aricoma.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250319T200809Z
+    - ID: "dfe32d5a-3a0e-4fb0-848a-d4f5ec4426e8"
+      Hint: Title
+      Value: $name

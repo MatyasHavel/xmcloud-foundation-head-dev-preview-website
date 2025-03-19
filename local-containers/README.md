@@ -26,6 +26,9 @@ After you have initialised the repository you can use the `./local-containers/sc
 ./local-containers/scripts/up.ps1
 ```
 
+### Pushing data
+
+
 ### Stopping the Containers
 Once you have finished you can use the `./local-containers/scripts/down.ps1` script to stop the containers:
 

@@ -1,0 +1,37 @@
+﻿---
+ID: "b5bb0944-315e-4db1-b2c2-fe617fd43b0b"
+Parent: "b5f31f56-59de-43db-9f7b-c1e214901cac"
+Template: "1be8170d-0160-4ccc-ad8d-e3a745ed72be"
+Path: /sitecore/content/sugcz/example/Settings/Standard Values/Site Collection Templates/Page
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{6042C02B-16B9-4C3A-AE2C-43B3F81B8E99}" />
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{AB586A04-5E5D-402D-9F61-7F6D63D5750F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250319T203711Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Page
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "40533997-55b5-4f81-98c5-4ad1a1a6a509"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\matyas.havel@aricoma.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250319T203823Z
+    - ID: "dfe32d5a-3a0e-4fb0-848a-d4f5ec4426e8"
+      Hint: Title
+      Value: Page

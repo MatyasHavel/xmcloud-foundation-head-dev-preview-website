@@ -1,0 +1,35 @@
+﻿---
+ID: "89b89d4a-76cd-4b3e-bed9-ded7a8ba6e62"
+Parent: "5efa4765-5b69-4bd3-8127-254c882ca683"
+Template: "def0aa0d-3446-41ae-b307-ec7ba429ce50"
+Path: /sitecore/system/Workflows/Sugcz Workflow/Draft/Publish/Datasource Workflow Action
+SharedFields:
+- ID: "b5757325-3263-4daf-b6cd-811629cf4794"
+  Hint: Scope
+  Value: "{C049953F-D744-41FA-BE67-F9F90D3C30BB}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250319T203242Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\matyas.havel@aricoma.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\matyas.havel@aricoma.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ba8682e3-3358-4874-9e04-d3eaf8868aef"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\matyas.havel@aricoma.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250319T203303Z
