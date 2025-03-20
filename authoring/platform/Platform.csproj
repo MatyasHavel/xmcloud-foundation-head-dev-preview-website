@@ -65,13 +65,17 @@
     <PackageReference Include="Sitecore.Assemblies.SitecoreHeadlessServicesServer" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\GraphQL.config" />
     <None Include="Platform.wpp.targets" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="README.md" />
     <None Include="web.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="App_Config\Include\" />
+    <Compile Include="Services\GraphQL\EdgeSchema\Queries\ItemQuery.cs" />
+    <Compile Include="Services\GraphQL\EdgeSchema\Queries\LayoutQuery.cs" />
+    <Compile Include="Services\GraphQL\EdgeSchema\Queries\PreviewItemResolver.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
