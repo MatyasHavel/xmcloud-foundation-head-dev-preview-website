@@ -9,6 +9,7 @@
     <PlatformVersion>1.*</PlatformVersion>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Update="Sitecore.XmCloud.ExperienceEdge.Connector.ContentHubDelivery" Version="$(PlatformVersion)" />
     <PackageReference Update="Sitecore.XmCloud.Kernel" Version="$(PlatformVersion)" />
     <PackageReference Update="Sitecore.XmCloud.ContentSearch" Version="$(PlatformVersion)" />
     <PackageReference Update="Sitecore.XmCloud.ContentSearch.Linq" Version="$(PlatformVersion)" />

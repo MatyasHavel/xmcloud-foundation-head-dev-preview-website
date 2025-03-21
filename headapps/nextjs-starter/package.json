@@ -69,6 +69,7 @@
     "constant-case": "^3.0.4",
     "cross-env": "~7.0.3",
     "dotenv-flow": "^4.1.0",
+    "env-cmd": "^10.1.0",
     "eslint": "^8.56.0",
     "eslint-config-next": "^13.1.5",
     "eslint-config-prettier": "^8.6.0",
@@ -96,6 +97,8 @@
     "scaffold": "ts-node --project tsconfig.scripts.json scripts/scaffold-component/index.ts",
     "start:connected": "cross-env NODE_ENV=development npm-run-all --serial bootstrap --parallel next:dev start:watch-components",
     "start:production": "cross-env-shell NODE_ENV=production npm-run-all --serial bootstrap next:build next:start",
-    "start:watch-components": "ts-node --project tsconfig.scripts.json scripts/generate-component-builder/index.ts --watch"
+    "start:watch-components": "ts-node --project tsconfig.scripts.json scripts/generate-component-builder/index.ts --watch",
+
+    "start:preview": "env-cmd -f .env -f .env.preview npm run start:connected"
   }
 }
