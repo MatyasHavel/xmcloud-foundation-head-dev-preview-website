@@ -24,7 +24,8 @@ namespace XmCloudNextJsStarter.Services.GraphQL.EdgeSchema.Queries
                 {
                     item = item.Versions.GetOlderVersions()
                         .Reverse()
-                        .FirstOrDefault(x => !x.Fields[FieldIDs.WorkflowState].Value.Equals(WorkflowDraftStateID, StringComparison.OrdinalIgnoreCase));
+                        .FirstOrDefault(x => !x.Fields[FieldIDs.WorkflowState].Value.Equals(WorkflowDraftStateID,
+                            StringComparison.OrdinalIgnoreCase));
                 }
             }
             return item;

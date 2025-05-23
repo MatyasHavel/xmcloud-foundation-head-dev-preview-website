@@ -1,12 +1,12 @@
 ﻿using Sitecore.Links.UrlBuilders;
 using System;
+using System.Web;
+using XmCloudNextJsStarter.Constants;
 
 namespace XmCloudNextJsStarter.LinkManagers
 {
     public class MediaUrlBuilder : Sitecore.ExperienceEdge.Connector.ContentHubDelivery.UrlBuilder.DeliveryMediaUrlBuilder
     {
-        protected const string _previewEdgeUrl = "/sitecore/api/graph/edgePreview";
-
         protected const string _edgeTenantEnvVar = "SUGCZ_EDGE_TENANT";
 
         protected const string _forceHttpProtocol = "SUGCZ_FORCE_MEDIA_HTTP";
@@ -21,8 +21,9 @@ namespace XmCloudNextJsStarter.LinkManagers
         protected override void AddPrefix(UrlBuildModel model, MediaUrlBuilderOptions options)
         {
             base.AddPrefix(model, options);
-            if (System.Web.HttpContext.Current?.Request?.RawUrl == _previewEdgeUrl
-                && !string.IsNullOrEmpty(Environment.GetEnvironmentVariable(_edgeTenantEnvVar)))
+            if (!string.IsNullOrEmpty(HttpContext.Current?.Request?.RawUrl) &&
+                HttpContext.Current.Request.RawUrl.StartsWith(EdgeConstants.PreviewEdgeUrl) &&
+                !string.IsNullOrEmpty(Environment.GetEnvironmentVariable(_edgeTenantEnvVar)))
             {
                 model.Prefix = $"/{Environment.GetEnvironmentVariable(_edgeTenantEnvVar)}/media/";
             }
@@ -31,8 +32,9 @@ namespace XmCloudNextJsStarter.LinkManagers
         protected override void AddServer(UrlBuildModel model, MediaUrlBuilderOptions options)
         {
             base.AddServer(model, options);
-            if (System.Web.HttpContext.Current?.Request?.RawUrl == _previewEdgeUrl
-                && !string.IsNullOrEmpty(Environment.GetEnvironmentVariable(_edgeTenantEnvVar)))
+            if (!string.IsNullOrEmpty(HttpContext.Current?.Request?.RawUrl) &&
+                HttpContext.Current.Request.RawUrl.StartsWith(EdgeConstants.PreviewEdgeUrl) && 
+                !string.IsNullOrEmpty(Environment.GetEnvironmentVariable(_edgeTenantEnvVar)))
             {
                 model.Server = _edgePublicUrl;
             }

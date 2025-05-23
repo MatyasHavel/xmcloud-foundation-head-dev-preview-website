@@ -64,10 +64,12 @@
     <PackageReference Include="Sitecore.XmCloud.LayoutService" />
     <PackageReference Include="Sitecore.XmCloud.Assemblies" />
     <PackageReference Include="Sitecore.Assemblies.SitecoreHeadlessServicesServer" />
+    <PackageReference Include="Sitecore.XmCloud.XA.JSS.Foundation.Presentation" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\GraphQL.config" />
     <Content Include="App_Config\Include\LinkProvider.config" />
+    <Content Include="App_Config\Include\LayoutService.config" />
     <None Include="Platform.wpp.targets" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="README.md" />
@@ -75,10 +77,14 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="Constants\EdgeConstants.cs" />
+    <Compile Include="LayoutService\Serialization\SxaItemSerializer.cs" />
     <Compile Include="LinkManagers\MediaUrlBuilder.cs" />
     <Compile Include="Services\GraphQL\EdgeSchema\Queries\ItemQuery.cs" />
     <Compile Include="Services\GraphQL\EdgeSchema\Queries\LayoutQuery.cs" />
-    <Compile Include="Services\GraphQL\EdgeSchema\Queries\PreviewItemResolver.cs" />
+    <Compile Include="Services\Managers\DependencyConfigurator.cs" />
+    <Compile Include="Services\Managers\GraphQLEndpointManager.cs" />
+    <Compile Include="Services\PreviewItemResolver.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
