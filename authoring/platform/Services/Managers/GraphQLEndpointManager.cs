@@ -19,7 +19,6 @@ namespace XmCloudNextJsStarter.Services.Managers
             if (!string.IsNullOrEmpty(HttpContext.Current?.Request?.RawUrl) &&
                 HttpContext.Current.Request.RawUrl.StartsWith(EdgeConstants.PreviewEdgeUrl))
             {
-                Sitecore.Diagnostics.Log.Info($"############# Reverse", string.Empty);
                 return base.GetEndpoints().Reverse();
             }
             return base.GetEndpoints();
