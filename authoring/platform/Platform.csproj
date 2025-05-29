@@ -78,6 +78,7 @@
   <ItemGroup />
   <ItemGroup>
     <Compile Include="Constants\EdgeConstants.cs" />
+    <Compile Include="LayoutService\Serialization\RenderingContentsResolver.cs" />
     <Compile Include="LayoutService\Serialization\SxaItemSerializer.cs" />
     <Compile Include="LinkManagers\MediaUrlBuilder.cs" />
     <Compile Include="Services\GraphQL\EdgeSchema\Queries\ItemQuery.cs" />
